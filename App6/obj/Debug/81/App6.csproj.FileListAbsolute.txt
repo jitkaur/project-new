@@ -141,3 +141,5 @@ C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\android\assets\System.Servic
 C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\android\assets\System.Xml.pdb
 C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\res\drawable\bck.jpg
 C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\res\drawable\reg.jpg
+C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\res\layout\admin.xml
+C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\res\drawable\admin.jpg

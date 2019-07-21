@@ -1,3 +1,6 @@
+App6.Admin, App6;md579c6cf6a6dac32b5516b44ad738cbbaf.Admin
+App6.Admin;md579c6cf6a6dac32b5516b44ad738cbbaf.Admin
+app6.Admin;md579c6cf6a6dac32b5516b44ad738cbbaf.Admin
 App6.DBHelperClass, App6;md579c6cf6a6dac32b5516b44ad738cbbaf.DBHelperClass
 App6.DBHelperClass;md579c6cf6a6dac32b5516b44ad738cbbaf.DBHelperClass
 app6.DBHelperClass;md579c6cf6a6dac32b5516b44ad738cbbaf.DBHelperClass

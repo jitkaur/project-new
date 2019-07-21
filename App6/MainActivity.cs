@@ -24,6 +24,7 @@ namespace App6
         Button myRegbtn;
         Button loginbtn;
         Button edtbtn;
+        Button adminbtn;
         Button list;
         Android.App.AlertDialog.Builder alert;
         //  Button myRegbtn;
@@ -42,8 +43,9 @@ namespace App6
             Password = FindViewById<EditText>(Resource.Id.Password);
             myRegbtn = FindViewById<Button>(Resource.Id.btnReg);
             loginbtn = FindViewById<Button>(Resource.Id.btnLogin);
-          //  edtbtn = FindViewById<Button>(Resource.Id.edtReg);
-           // list = FindViewById<Button>(Resource.Id.list);
+            adminbtn = FindViewById<Button>(Resource.Id.adminbtn);
+            //  edtbtn = FindViewById<Button>(Resource.Id.edtReg);
+            // list = FindViewById<Button>(Resource.Id.list);
             myDB = new DBHelperClass(this);
             loginbtn.Click += delegate
             {
@@ -73,17 +75,23 @@ namespace App6
             StartActivity(newScreen);
 
         };
-           /* edtbtn.Click += delegate
+            adminbtn.Click += delegate
             {
-                Intent Screen = new Intent(this, typeof(WelcomeScreen));
-                StartActivity(Screen);
+                Intent newScreen = new Intent(this, typeof(Admin));
+                StartActivity(newScreen);
 
             };
-            list.Click += delegate
-            {
-                Intent Screen = new Intent(this, typeof(WelcomeScreen));
-                StartActivity(Screen);
-            };*/
+            /* edtbtn.Click += delegate
+             {
+                 Intent Screen = new Intent(this, typeof(WelcomeScreen));
+                 StartActivity(Screen);
+
+             };
+             list.Click += delegate
+             {
+                 Intent Screen = new Intent(this, typeof(WelcomeScreen));
+                 StartActivity(Screen);
+             };*/
         }
     }
 }
