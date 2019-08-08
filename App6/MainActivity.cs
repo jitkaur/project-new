@@ -3,95 +3,62 @@ using Android.OS;
 using Android.Support.V7.App;
 using Android.Runtime;
 using Android.Widget;
+using Android.Views;
+using Android;
+using System;
 using Android.Content;
-using Android.Database.Sqlite;
-
-using Android.Widget;
-
 
 namespace App6
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
-        DBHelperClass myDB;
-
-        // DBHelperClass DB;
-        //Android.App.AlertDialog.Builder alert;
-        public SQLiteDatabase database;
-        EditText Name;
-        EditText Password;
-        Button myRegbtn;
-        Button loginbtn;
-        Button edtbtn;
-        Button adminbtn;
-        Button list;
-        Android.App.AlertDialog.Builder alert;
-        //  Button myRegbtn;
-        bool res;
-        public object alrt;
-
         protected override void OnCreate(Bundle savedInstanceState)
         {
-
             base.OnCreate(savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
-            alrt = new Android.App.AlertDialog.Builder(this);
-
-            Name = FindViewById<EditText>(Resource.Id.name);
-            Password = FindViewById<EditText>(Resource.Id.Password);
-            myRegbtn = FindViewById<Button>(Resource.Id.btnReg);
-            loginbtn = FindViewById<Button>(Resource.Id.btnLogin);
-            adminbtn = FindViewById<Button>(Resource.Id.adminbtn);
-            //  edtbtn = FindViewById<Button>(Resource.Id.edtReg);
-            // list = FindViewById<Button>(Resource.Id.list);
-            myDB = new DBHelperClass(this);
-            loginbtn.Click += delegate
-            {
-
-
-                res = myDB.selectMydata(Name.Text, Password.Text);
-                if (res == true)
-                {
-                    Intent newScreen = new Intent(this, typeof(WelcomeScreen));
-                    StartActivity(newScreen);
-                }
-                else
-                {
-                    alert.SetTitle("Error");
-                    alert.SetMessage("Invalid login");
-                    Dialog myDialog = alert.Create();
-                    myDialog.Show();
-                }
-
-                // 
-                //   myDB.login(Name.Text, Password.Text);
-
-            };
-            myRegbtn.Click += delegate
+        }
+        public override bool OnCreateOptionsMenu(IMenu menu)
         {
-            Intent newScreen = new Intent(this, typeof(Register));
-            StartActivity(newScreen);
-
-        };
-            adminbtn.Click += delegate
+            // set the menu layout on Main Activity  
+            MenuInflater.Inflate(Resource.Layout.mainMenu, menu);
+            return base.OnCreateOptionsMenu(menu);
+        }
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
             {
-                Intent newScreen = new Intent(this, typeof(Admin));
-                StartActivity(newScreen);
+                case Resource.Id.menuItem1:
+                    {
+                        // add your code  
+                        Console.WriteLine("Wecome1");
+                        Intent newScreen = new Intent(this, typeof(WelcomeScreen));
+                        StartActivity(newScreen);
+                        //SetContentView(Resource.Layout.page);
+                        return true;
+                    }
+                case Resource.Id.menuItem2:
+                    {
+                        // add your code  
+                        Console.WriteLine("Wecome");
+                        Intent newScreen = new Intent(this, typeof(Register));
+                        StartActivity(newScreen);
+                        // SetContentView(Resource.Layout.page);
+                        return true;
+                    }
+                case Resource.Id.menuItem3:
+                    {
+                        // add your code  
+                        Console.WriteLine("Wecome3");
+                        Intent newScreen = new Intent(this, typeof(Admin));
+                        StartActivity(newScreen);
+                        SetContentView(Resource.Layout.activity_main);
+                        return true;
+                    }
+            }
 
-            };
-            /* edtbtn.Click += delegate
-             {
-                 Intent Screen = new Intent(this, typeof(WelcomeScreen));
-                 StartActivity(Screen);
-
-             };
-             list.Click += delegate
-             {
-                 Intent Screen = new Intent(this, typeof(WelcomeScreen));
-                 StartActivity(Screen);
-             };*/
+            return base.OnOptionsItemSelected(item);
         }
     }
 }

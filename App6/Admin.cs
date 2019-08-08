@@ -51,7 +51,7 @@ namespace App6
                     Console.WriteLine("Welcome");
 
 
-                    Intent newScreen = new Intent(this, typeof(Admin));
+                    Intent newScreen = new Intent(this, typeof(AddNews));
                     StartActivity(newScreen);
                 }
                 else

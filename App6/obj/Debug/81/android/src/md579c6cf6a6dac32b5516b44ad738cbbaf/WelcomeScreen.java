@@ -2,7 +2,7 @@ package md579c6cf6a6dac32b5516b44ad738cbbaf;
 
 
 public class WelcomeScreen
-	extends android.app.Activity
+	extends android.support.v7.app.AppCompatActivity
 	implements
 		mono.android.IGCUserPeer
 {
