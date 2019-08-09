@@ -20,7 +20,7 @@ namespace App6
         Context myContex;  // Step 4
         //Android.App.AlertDialog.Builder alert;
         // // Step 6
-        public static string DBName = "myDatabse";
+        public static string DBName = "myDatabase";
         public static string tableName = "User";
         public static string Email = "Email";
         public static string Password = "Password";

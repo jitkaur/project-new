@@ -60,34 +60,33 @@ namespace App6
 
             submit.Click += delegate
             {
-                myAd.OnCreate(datae);
+                myAd.insertValue(name.Text, topic.Text, news.Text);
+                //myAd.selectMydata(name.Text, topic.Text, news.Text);
+                //myAd.OnCreate(datae);
                 var value = name.Text;
                 var top = topic.Text;
                 var khabar = news.Text;
                 System.Console.WriteLine("Text Value ---- > " + value);
 
-                
-              myAd.insertValue(name.Text,topic.Text,news.Text);
-              myAd.selectMydata(name.Text, topic.Text, news.Text);
+                Intent newScreen = new Intent(this, typeof(displayActivity));
+                newScreen.PutExtra("name",value);
+                newScreen.PutExtra("top", top);
+                newScreen.PutExtra("khabar", khabar);
+                StartActivity(newScreen);
 
-                //myDB.selectMydata(.Text, Password.Text);
-                //var name = UserName.Text;
-                SetContentView(Resource.Layout.dislay);
-                tname = FindViewById<EditText>(Resource.Id.nameOfUser);
-                ttopic = FindViewById<EditText>(Resource.Id.TopicOfNews);
-                tnews = FindViewById<EditText>(Resource.Id.OfNews);
-                back = FindViewById<Button>(Resource.Id.btn);
-                tname.Text = value;
-                ttopic.Text = top;
-                tnews.Text = khabar;
-             //   backb.Text = back;
                 
-                /*System.Console.WriteLine("Text Value ---- > " + name.Text);
-                System.Console.WriteLine("Text Value ---- > " + topic.Text);
-                System.Console.WriteLine("Text Value ---- > " + news.Text);*/
-                Intent i = new Intent(this, typeof(displayActivity));
-                StartActivity(i);
-            
+
+                //   //myDB.selectMydata(.Text, Password.Text);
+                //   //var name = UserName.Text;
+                //   SetContentView(Resource.Layout.dislay);
+                //   
+
+                //   /*System.Console.WriteLine("Text Value ---- > " + name.Text);
+                //   System.Console.WriteLine("Text Value ---- > " + topic.Text);
+                //   System.Console.WriteLine("Text Value ---- > " + news.Text);*/
+                //   Intent i = new Intent(this, typeof(displayActivity));
+                //   StartActivity(i);
+
 
 
             };

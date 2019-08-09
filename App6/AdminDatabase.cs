@@ -11,7 +11,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using Android.Content;
+
 
 namespace App6
 {
@@ -20,7 +20,7 @@ namespace App6
         Context myContex;  // Step 4
         //Android.App.AlertDialog.Builder alert;
         // // Step 6
-        public static string DBName = "myDatabse";
+        public static string DBName = "myDatabase";
         public static string tableName = "newtable";
         public static string topic = "Topic";
         public static string news = "News";
@@ -31,6 +31,12 @@ namespace App6
         public string creatTable = "Create Table " +
             tableName + "(" + name + " Text" + "," + topic + " Text" + "," + news + " Text" + ")";
         public string selectStm = "Select * from " + tableName;
+
+        // news table
+        //public static string tableNameNews = "newtable";
+        //public string creatTableNews = "Create Table " +
+        //   tableNameNews + "(" + name + " Text" + "," + topic + " Text" + "," + news + " Text" + ")";
+       
 
         SQLiteDatabase connectionObj;
 
@@ -44,13 +50,14 @@ namespace App6
         {
             System.Console.WriteLine("My Create Table STM \n \n" + creatTable);
 
-            connectionObj.ExecSQL(creatTable);    // // Step 7
+            datab.ExecSQL(creatTable);    // // Step 7
+            //datab.ExecSQL(creatTableNews)
         }
 
 
         public void insertValue(string name, string topic, string news)
         {
-
+            
             string insertStm = "Insert into " +
             tableName + " values (" + "'" + name + "'" + "," + "'" + topic + "'" + " ," + "'" + news + "'" + ");";
 
@@ -113,10 +120,10 @@ namespace App6
 
         }
 
-        private void StartActivity(Intent c)
-        {
-            throw new NotImplementedException();
-        }
+        //private void StartActivity(Intent c)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         public override void OnUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
         {

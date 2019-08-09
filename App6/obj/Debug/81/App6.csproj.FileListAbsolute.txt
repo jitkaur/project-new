@@ -136,3 +136,13 @@ C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\linksrc\System.Net.Http.pdb
 C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\linksrc\System.Runtime.Serialization.pdb
 C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\linksrc\System.ServiceModel.Internals.pdb
 C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\linksrc\Mono.Security.pdb
+C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\android\assets\App6.pdb
+C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\android\assets\Mono.Android.pdb
+C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\android\assets\Mono.Security.pdb
+C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\android\assets\mscorlib.pdb
+C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\android\assets\System.Core.pdb
+C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\android\assets\System.Net.Http.pdb
+C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\android\assets\System.pdb
+C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\android\assets\System.Runtime.Serialization.pdb
+C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\android\assets\System.ServiceModel.Internals.pdb
+C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\android\assets\System.Xml.pdb
