@@ -23,7 +23,10 @@ using String = Java.Lang.String;
 using Java.Sql;
 
 namespace App6
-{
+{ 
+
+    //android:theme="@style/AppTheme"
+
     [Activity(Label = "addNews")]
     public class AddNews : Activity
     {

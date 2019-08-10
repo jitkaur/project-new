@@ -11,7 +11,7 @@ using Android.Widget;
 
 namespace App6
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme")]
     public class WelcomeScreen : AppCompatActivity
     {
         DBHelperClass myDB;
@@ -54,7 +54,7 @@ namespace App6
                 res = myDB.selectMydata(Name.Text, Password.Text);
                 if (res == true)
                 {
-                    Intent newScreen = new Intent(this, typeof(WelcomeScreen));
+                    Intent newScreen = new Intent(this, typeof(AfterLogin));
                     StartActivity(newScreen);
                 }
                 else

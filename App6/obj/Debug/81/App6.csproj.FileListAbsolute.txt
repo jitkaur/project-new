@@ -74,6 +74,7 @@ C:\Users\jaspr\source\repos\final\App6\bin\Debug\App6.App6.apk
 C:\Users\jaspr\source\repos\final\App6\bin\Debug\App6.App6-Signed.apk
 C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\MonoAndroid,Version=v8.1.AssemblyAttributes.cs
 C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\App6.nuget.stamp
+C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\App6.csprojAssemblyReference.cache
 C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\libraryimports.cache.stamp
 C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\res.flag
 C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\App6.csproj.CoreCompileInputs.cache
@@ -114,6 +115,14 @@ C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\res\layout\login.xml
 C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\res\layout\mainmenu.xml
 C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\res\drawable\ninja.jpg
 C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\res\layout\dislay.xml
+C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\res\layout\afterlog.xml
+C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\res\layout\firsttablayout.xml
+C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\res\layout\secondtablayout.xml
+C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\res\layout\fourttablayout.xml
+C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\res\layout\android_listpage.xml
+C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\res\layout\intro_layout.xml
+C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\res\layout\activity_tab.xml
+C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\res\layout\activity_code_view.xml
 C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\R.cs.flag
 C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\R.txt
 C:\Users\jaspr\source\repos\final\App6\obj\Debug\81\uploadflags.txt

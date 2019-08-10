@@ -33,6 +33,12 @@ namespace App6
             tableName + "(" +Name+ " Text" + ", " + Email + " Text "+" , " + Password + " Text "+" ," + Age + " Text " +")";
         public string selectStm = "Select * from " + tableName;
 
+        // news table
+        //public string creatTableNews = "Create Table " +
+        //    tableName + "(" + name + " Text" + "," + topic + " Text" + "," + news + " Text" + ")";
+        //public string selectStm = "Select * from " + tableName;
+        // *************
+
         SQLiteDatabase connectionObj;
 
         public DBHelperClass(Context context) : base(context, name: DBName, factory: null, version: 1) //  // Step 5
@@ -45,7 +51,9 @@ namespace App6
         {
             System.Console.WriteLine("My Create Table STM \n \n" + creatTable);
 
-            db.ExecSQL(creatTable);    // // Step 7
+            db.ExecSQL(creatTable);
+            //db.ExecSQL(creatTableNews);
+            // // Step 7
         }
 
 

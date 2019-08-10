@@ -59,8 +59,14 @@
     <Compile Include="AddNews.cs" />
     <Compile Include="Admin.cs" />
     <Compile Include="AdminDatabase.cs" />
+    <Compile Include="AfterLogin.cs" />
+    <Compile Include="android_listpageact.cs" />
     <Compile Include="DBHelperClasss.cs" />
     <Compile Include="displayActivity.cs" />
+    <Compile Include="FirstFragment.cs" />
+    <Compile Include="FourtFragment.cs" />
+    <Compile Include="NewsViewActivity.cs" />
+    <Compile Include="SecondFragment.cs" />
     <Compile Include="Register.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
@@ -146,6 +152,46 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\dislay.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\afterlog.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\FirstTabLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\SecondTabLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\FourtTabLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\android_listpage.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\intro_layout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_tab.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_code_view.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

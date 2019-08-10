@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -12,7 +11,7 @@ using Android.Widget;
 
 namespace App6
 {
-    [Activity(Label = "admin")]
+    [Activity(Label = "admin" )]
     public class Admin : Activity
     {
         EditText Name;

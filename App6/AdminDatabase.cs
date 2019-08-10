@@ -27,16 +27,17 @@ namespace App6
         public static string name = "Name";
         public bool log;
 
-
+        //working 
         public string creatTable = "Create Table " +
             tableName + "(" + name + " Text" + "," + topic + " Text" + "," + news + " Text" + ")";
         public string selectStm = "Select * from " + tableName;
+        // *************************
 
         // news table
         //public static string tableNameNews = "newtable";
         //public string creatTableNews = "Create Table " +
         //   tableNameNews + "(" + name + " Text" + "," + topic + " Text" + "," + news + " Text" + ")";
-       
+
 
         SQLiteDatabase connectionObj;
 
@@ -67,23 +68,18 @@ namespace App6
 
         }
 
-        /*   public void updt(string nm, string eml, string ag)
-           {
-               string updateStm = "Update " + tableName + " set Email = '" + eml + "', Age ='" + ag + "' where Name ='" + nm + "'";
-               System.Console.WriteLine(updateStm);
-               System.Console.WriteLine("My SQL  update STM \n  \n" + updateStm);
-               connectionObj.ExecSQL(updateStm);
-               // break;
-           }
+        public ICursor PrintCodeList(Context context)
+        {
+            //connectionObj = new DataConnection(context).ReadableDatabase;
+            string selectCodeStm = string.Format("Select * from {0} ", tableName);
 
-           public void dlt(string nm)
-           {
-               string dltStm = "Delete from " + tableName + " where Name='" + nm + "'";
-               Console.WriteLine(dltStm);
-               System.Console.WriteLine("My SQL  delete STM \n  \n" + dltStm);
-               connectionObj.ExecSQL(dltStm);
-           }
-           */
+            ICursor myresult = connectionObj.RawQuery(selectCodeStm, null);
+
+            return myresult;
+        }
+
+
+
 
         public Boolean selectMydata(string N, string P,string T)
         {
@@ -91,7 +87,7 @@ namespace App6
             string selectStm = "Select * from " + tableName + ";";
             ICursor myresut = connectionObj.RawQuery(selectStm, null);
 
-            // ICursor myresut = connectionObj.RawQuery(selectStm, null);
+          
 
 
             //tring selectStmwithId = "Select * from "+ tableName " where id="+id +"and name="+nameFiled;
