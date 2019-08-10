@@ -85,7 +85,6 @@ namespace App6
              {
                  Intent Screen = new Intent(this, typeof(WelcomeScreen));
                  StartActivity(Screen);
-
              };
              list.Click += delegate
              {

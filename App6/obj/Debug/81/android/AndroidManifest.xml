@@ -8,7 +8,9 @@
     <activity android:label="admin" android:name="md579c6cf6a6dac32b5516b44ad738cbbaf.Admin" />
     <activity android:label="@string/app_name" android:name="md579c6cf6a6dac32b5516b44ad738cbbaf.AfterLogin" />
     <activity android:label="android_listpageact" android:name="md579c6cf6a6dac32b5516b44ad738cbbaf.android_listpageact" />
+    <activity android:label="CSharp" android:name="md579c6cf6a6dac32b5516b44ad738cbbaf.CSharp" />
     <activity android:label="displayActivity" android:name="md579c6cf6a6dac32b5516b44ad738cbbaf.displayActivity" />
+    <activity android:label="java" android:name="md579c6cf6a6dac32b5516b44ad738cbbaf.javaTutorial" />
     <activity android:label="NewsViewActivity" android:name="md579c6cf6a6dac32b5516b44ad738cbbaf.NewsViewActivity" />
     <activity android:label="@string/app_name" android:theme="@style/AppTheme" android:name="md579c6cf6a6dac32b5516b44ad738cbbaf.quiz1" />
     <activity android:label="quiz2" android:name="md579c6cf6a6dac32b5516b44ad738cbbaf.quiz2" />

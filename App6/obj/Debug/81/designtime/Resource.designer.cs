@@ -3133,6 +3133,9 @@ namespace App6
 			// aapt resource value: 0x7F030008
 			public const int android_listpage = 2130903048;
 			
+			// aapt resource value: 0x7F030009
+			public const int cSharp = 2130903049;
+			
 			// aapt resource value: 0x7F0F001B
 			public const int design_bottom_navigation_item = 2131689499;
 			
@@ -3175,23 +3178,26 @@ namespace App6
 			// aapt resource value: 0x7F0F0028
 			public const int design_text_input_password_icon = 2131689512;
 			
-			// aapt resource value: 0x7F030009
-			public const int dislay = 2130903049;
-			
 			// aapt resource value: 0x7F030010
-			public const int FirstTabLayout = 2130903056;
+			public const int dislay = 2130903056;
 			
 			// aapt resource value: 0x7F030011
-			public const int FourtTabLayout = 2130903057;
+			public const int FirstTabLayout = 2130903057;
 			
 			// aapt resource value: 0x7F030012
-			public const int intro_layout = 2130903058;
+			public const int FourtTabLayout = 2130903058;
 			
 			// aapt resource value: 0x7F030013
-			public const int login = 2130903059;
+			public const int intro_layout = 2130903059;
 			
 			// aapt resource value: 0x7F030014
-			public const int mainMenu = 2130903060;
+			public const int javaTut = 2130903060;
+			
+			// aapt resource value: 0x7F030015
+			public const int login = 2130903061;
+			
+			// aapt resource value: 0x7F030016
+			public const int mainMenu = 2130903062;
 			
 			// aapt resource value: 0x7F0F0001
 			public const int notification_action = 2131689473;
@@ -3238,17 +3244,17 @@ namespace App6
 			// aapt resource value: 0x7F0F0006
 			public const int notification_template_part_time = 2131689478;
 			
-			// aapt resource value: 0x7F030015
-			public const int quiz1 = 2130903061;
-			
-			// aapt resource value: 0x7F030016
-			public const int quiz2 = 2130903062;
-			
 			// aapt resource value: 0x7F030017
-			public const int registration = 2130903063;
+			public const int quiz1 = 2130903063;
 			
 			// aapt resource value: 0x7F030018
-			public const int SecondTabLayout = 2130903064;
+			public const int quiz2 = 2130903064;
+			
+			// aapt resource value: 0x7F030019
+			public const int registration = 2130903065;
+			
+			// aapt resource value: 0x7F030020
+			public const int SecondTabLayout = 2130903072;
 			
 			// aapt resource value: 0x7F0F0038
 			public const int select_dialog_item_material = 2131689528;
@@ -3265,11 +3271,11 @@ namespace App6
 			// aapt resource value: 0x7F0F003C
 			public const int tooltip = 2131689532;
 			
-			// aapt resource value: 0x7F030019
-			public const int Welcome = 2130903065;
+			// aapt resource value: 0x7F030021
+			public const int Welcome = 2130903073;
 			
-			// aapt resource value: 0x7F030020
-			public const int WelcomeScreen = 2130903072;
+			// aapt resource value: 0x7F030022
+			public const int WelcomeScreen = 2130903074;
 			
 			static Layout()
 			{

@@ -61,10 +61,12 @@
     <Compile Include="AdminDatabase.cs" />
     <Compile Include="AfterLogin.cs" />
     <Compile Include="android_listpageact.cs" />
+    <Compile Include="CSharp.cs" />
     <Compile Include="DBHelperClasss.cs" />
     <Compile Include="displayActivity.cs" />
     <Compile Include="FirstFragment.cs" />
     <Compile Include="FourtFragment.cs" />
+    <Compile Include="javaTutorial.cs" />
     <Compile Include="NewsViewActivity.cs" />
     <Compile Include="quiz1.cs" />
     <Compile Include="quiz2.cs" />
@@ -205,6 +207,16 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\quiz2.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\javaTut.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\cSharp.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

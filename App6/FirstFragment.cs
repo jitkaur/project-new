@@ -65,13 +65,33 @@ namespace App6
         {
             var index = e.Position;
             string myvalue = (string)subArray[index];
+            Console.WriteLine(myvalue);
 
             if(myvalue == "Android")
             {
                 Intent test = new Intent(this.Activity, typeof(android_listpageact));
                 StartActivity(test);
             }
-            
+            if (myvalue == "java")
+            {
+                Intent test = new Intent(this.Activity, typeof(javaTutorial));
+                StartActivity(test);
+            }
+            if (myvalue == "C#")
+            {
+                Intent test = new Intent(this.Activity, typeof(CSharp));
+                StartActivity(test);
+            }
+            if (myvalue == "C++")
+            {
+                Intent test = new Intent(this.Activity, typeof(android_listpageact));
+                StartActivity(test);
+            }
+            if (myvalue == "C")
+            {
+                Intent test = new Intent(this.Activity, typeof(android_listpageact));
+                StartActivity(test);
+            }
         }
 
         private void MySearch_QueryTextChange(object sender, SearchView.QueryTextChangeEventArgs e)

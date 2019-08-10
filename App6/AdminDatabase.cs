@@ -42,21 +42,21 @@ namespace App6
 
 
         SQLiteDatabase connectionObj;
-        
+
         public AdminDatabase(Context context) : base(context, name: DBName, factory: null, version: 1) //  // Step 5
         {
             count++;
             myContex = context;
             connectionObj = WritableDatabase;
-           
-              
+            //connectionObj.ExecSQL(creatTable);
+
         }
 
         public override void OnCreate(SQLiteDatabase datab)
         {
             System.Console.WriteLine("My Create Table STM \n \n" + creatTable);
 
-           datab.ExecSQL(creatTable);    // // Step 7
+          connectionObj.ExecSQL(creatTable);    // // Step 7
             //datab.ExecSQL(creatTableNews)
         }
 
@@ -86,18 +86,18 @@ namespace App6
 
 
 
-        public Boolean selectMydata(string N, string P,string T)
+        public Boolean selectMydata(string N, string P, string T)
         {
             int c = 0;
             string selectStm = "Select * from " + tableName + ";";
             ICursor myresut = connectionObj.RawQuery(selectStm, null);
 
-          
+
 
 
             //tring selectStmwithId = "Select * from "+ tableName " where id="+id +"and name="+nameFiled;
-           // myresut.Count > 0;
-         
+            // myresut.Count > 0;
+
 
             while (myresut.MoveToNext())
             {

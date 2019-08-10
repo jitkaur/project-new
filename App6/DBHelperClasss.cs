@@ -30,7 +30,7 @@ namespace App6
 
 
         public string creatTable = "Create Table " +
-            tableName + "(" +Name+ " Text" + ", " + Email + " Text "+" , " + Password + " Text "+" ," + Age + " Text " +")";
+            tableName + "(" + Name + " Text" + ", " + Email + " Text " + " , " + Password + " Text " + " ," + Age + " Text " + ")";
         public string selectStm = "Select * from " + tableName;
 
         // news table
@@ -61,12 +61,12 @@ namespace App6
         {
 
             string insertStm = "Insert into " +
-            tableName + " values (" + "'"+ Name + "'"+ "," + "'" + Email + "'" +" ,"+ "'" + Password + "'"+" ,"+ "'" + Age +"'"+");";
+            tableName + " values (" + "'" + Name + "'" + "," + "'" + Email + "'" + " ," + "'" + Password + "'" + " ," + "'" + Age + "'" + ");";
 
             System.Console.WriteLine("My SQL  Insert STM \n  \n" + insertStm);
 
             connectionObj.ExecSQL(insertStm);
-                 
+
         }
 
         public void updt(string nm, string eml, string ag)
@@ -75,7 +75,7 @@ namespace App6
             System.Console.WriteLine(updateStm);
             System.Console.WriteLine("My SQL  update STM \n  \n" + updateStm);
             connectionObj.ExecSQL(updateStm);
-           // break;
+            // break;
         }
 
         public void dlt(string nm)
@@ -88,19 +88,15 @@ namespace App6
 
         /* public void login(string N, string P)
          {
-
-
              string select = "Select Name,Password from " + tableName + " where Name ="
                  + "'" + N + "'" + "and Password =" + "'" + Password + "'" + ";";
              Name = N;
              Password = P;
-
              ICursor myresut = connectionObj.RawQuery(select, null);
              /*while (myresut.MoveToNext())
              {*/
         /* var name = myresut.GetString(myresut.GetColumnIndexOrThrow(Name));
            System.Console.WriteLine("namw from BD " + name);
-
           /* var email = myresut.GetString(myresut.GetColumnIndexOrThrow(Email));
            System.Console.WriteLine("email from BD " + email);*/
 
@@ -127,51 +123,50 @@ namespace App6
               Dialog myDialog = alert.Create();
               myDialog.Show();
           }
-
     }*/
         public Boolean selectMydata(string N, string P)
-            {
-                int c = 0;
+        {
+            int c = 0;
             string selectStm = "Select * from " + tableName + ";";
             ICursor myresut = connectionObj.RawQuery(selectStm, null);
 
-           // ICursor myresut = connectionObj.RawQuery(selectStm, null);
+            // ICursor myresut = connectionObj.RawQuery(selectStm, null);
 
 
-                //tring selectStmwithId = "Select * from "+ tableName " where id="+id +"and name="+nameFiled;
-                //myresut.Count >0
+            //tring selectStmwithId = "Select * from "+ tableName " where id="+id +"and name="+nameFiled;
+            //myresut.Count >0
 
 
-                while (myresut.MoveToNext())
-                {
+            while (myresut.MoveToNext())
+            {
 
-                    var name = myresut.GetString(myresut.GetColumnIndexOrThrow(Name));
-                    System.Console.WriteLine("Name from sD " + name);
+                var name = myresut.GetString(myresut.GetColumnIndexOrThrow(Name));
+                System.Console.WriteLine("Name from sD " + name);
 
-                    var email = myresut.GetString(myresut.GetColumnIndexOrThrow(Email));
-                    System.Console.WriteLine("Email from sD " + email);
+                var email = myresut.GetString(myresut.GetColumnIndexOrThrow(Email));
+                System.Console.WriteLine("Email from sD " + email);
 
-                    var pass = myresut.GetString(myresut.GetColumnIndexOrThrow(Password));
-                    System.Console.WriteLine("Pass from BD " + pass);
+                var pass = myresut.GetString(myresut.GetColumnIndexOrThrow(Password));
+                System.Console.WriteLine("Pass from BD " + pass);
 
-                    var age = myresut.GetString(myresut.GetColumnIndexOrThrow(Age));
-                    System.Console.WriteLine("Age from BD " + age);
+                var age = myresut.GetString(myresut.GetColumnIndexOrThrow(Age));
+                System.Console.WriteLine("Age from BD " + age);
 
-                    if ((N==name) && (P==pass))
-                            { c++; }
+                if ((N == name) && (P == pass))
+                { c++; }
             }
-                if (c > 0)
-                {
-                    System.Console.WriteLine("Successfull");
+            if (c > 0)
+            {
+                System.Console.WriteLine("Successfull");
                 log = true;
                 return true;
-               
-            }
-                log = false;
-            System.Console.WriteLine(log); 
-            return false;
 
             }
+            log = false;
+            System.Console.WriteLine(log);
+            return false;
+
+        }
 
         private void StartActivity(Intent c)
         {

@@ -43,7 +43,7 @@ namespace App6
             Age = FindViewById<EditText>(Resource.Id.age);
             regbtn = FindViewById<Button>(Resource.Id.register);
 
-            
+
             alert = new Android.App.AlertDialog.Builder(this);
 
 
@@ -56,31 +56,31 @@ namespace App6
                 var email = Email.Text;
                 System.Console.WriteLine("Text Value ---- > " + value);
                 //check for empty value
-               
+
 
                 if (value.Trim().Equals("") || value.Length < 0)
                 {
 
                     alert.SetTitle("Error");
                     alert.SetMessage("Please Enter Valid Data");
-                   // alert.SetPositiveButton("OK", alertOKButton);
-                   // alert.SetNegativeButton("Cancel", alertOKButton);
+                    // alert.SetPositiveButton("OK", alertOKButton);
+                    // alert.SetNegativeButton("Cancel", alertOKButton);
                     Dialog myDialog = alert.Create();
                     myDialog.Show();
                 }
                 else
                 {  // some value 
                     //myDB.OnCreate(database);
-                    myDB.insertValue(UserName.Text,Email.Text, Password.Text, Age.Text);
+                    myDB.insertValue(UserName.Text, Email.Text, Password.Text, Age.Text);
 
-                   // myDB.selectMydata(.Text, Password.Text);
+                    // myDB.selectMydata(.Text, Password.Text);
                     //var value = UserName.Text;
 
                     System.Console.WriteLine("Text Value ---- > " + UserName.Text);
                     System.Console.WriteLine("Text Value ---- > " + Password.Text);
                     System.Console.WriteLine("Text Value ---- > " + Email.Text);
                     System.Console.WriteLine("Text Value ---- > " + Age.Text);
-                    Intent i = new Intent( this,typeof(MainActivity));
+                    Intent i = new Intent(this, typeof(MainActivity));
                     StartActivity(i);
                 }
             };
@@ -88,6 +88,6 @@ namespace App6
 
 
 
-    }
+        }
     }
 }
