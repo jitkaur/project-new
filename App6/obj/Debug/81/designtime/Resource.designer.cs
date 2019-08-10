@@ -2633,8 +2633,8 @@ namespace App6
 			// aapt resource value: 0x7F020025
 			public const int para1 = 2130837541;
 			
-			// aapt resource value: 0x7F020026
-			public const int para2 = 2130837542;
+			// aapt resource value: 0x7F020027
+			public const int para2 = 2130837543;
 			
 			// aapt resource value: 0x7F0C004D
 			public const int parallax = 2131492941;
@@ -2972,8 +2972,8 @@ namespace App6
 			// aapt resource value: 0x7F0C008F
 			public const int visible = 2131493007;
 			
-			// aapt resource value: 0x7F020027
-			public const int webView = 2130837543;
+			// aapt resource value: 0x7F020026
+			public const int webView = 2130837542;
 			
 			// aapt resource value: 0x7F0C0090
 			public const int wrap_content = 2131493008;

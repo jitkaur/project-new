@@ -26,6 +26,8 @@ namespace App6
         public static string news = "News";
         public static string name = "Name";
         public bool log;
+        public int count = 0;
+
 
         //working 
         public string creatTable = "Create Table " +
@@ -40,25 +42,28 @@ namespace App6
 
 
         SQLiteDatabase connectionObj;
-
+        
         public AdminDatabase(Context context) : base(context, name: DBName, factory: null, version: 1) //  // Step 5
         {
+            count++;
             myContex = context;
             connectionObj = WritableDatabase;
+           
+              
         }
 
         public override void OnCreate(SQLiteDatabase datab)
         {
             System.Console.WriteLine("My Create Table STM \n \n" + creatTable);
 
-            datab.ExecSQL(creatTable);    // // Step 7
+           datab.ExecSQL(creatTable);    // // Step 7
             //datab.ExecSQL(creatTableNews)
         }
 
 
         public void insertValue(string name, string topic, string news)
         {
-            
+            //connectionObj.ExecSQL(creatTable);
             string insertStm = "Insert into " +
             tableName + " values (" + "'" + name + "'" + "," + "'" + topic + "'" + " ," + "'" + news + "'" + ");";
 

@@ -3081,7 +3081,7 @@ containing a value of this type.
         public static final int notification_main_column=0x7f0800c9;
         public static final int notification_main_column_container=0x7f0800c8;
         public static final int para1=0x7f0800a2;
-        public static final int para2=0x7f0800a3;
+        public static final int para2=0x7f0800a4;
         public static final int parallax=0x7f08004c;
         public static final int parentPanel=0x7f080065;
         public static final int parent_matrix=0x7f08000b;
@@ -3198,7 +3198,7 @@ containing a value of this type.
         public static final int useLogo=0x7f080026;
         public static final int view_offset_helper=0x7f080016;
         public static final int visible=0x7f0800f9;
-        public static final int webView=0x7f0800a4;
+        public static final int webView=0x7f0800a3;
         public static final int withText=0x7f08003c;
         public static final int wrap_content=0x7f08002e;
     }

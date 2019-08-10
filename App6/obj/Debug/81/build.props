@@ -20,5 +20,5 @@ AndroidCreatePackagePerAbi=
 OS=Windows_NT
 DesignTimeBuild=
 AndroidIncludeDebugSymbols=True
-AdbTarget=-s RF8M40DP7XM
+AdbTarget=-s 4153324432573398
 AdbOptions=

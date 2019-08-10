@@ -59,10 +59,11 @@ namespace App6
             news = FindViewById<EditText>(Resource.Id.news);
             submit = FindViewById<Button>(Resource.Id.submit);
 
-            myAd = new AdminDatabase(this);
-
+           
             submit.Click += delegate
             {
+                myAd = new AdminDatabase(this);
+
                 myAd.insertValue(name.Text, topic.Text, news.Text);
                 //myAd.selectMydata(name.Text, topic.Text, news.Text);
                 //myAd.OnCreate(datae);

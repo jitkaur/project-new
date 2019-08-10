@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
 
 	<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -10,14 +11,16 @@
     android:layout_height="fill_parent"
     android:gravity="center"
     android:orientation="vertical">
+	
+
    <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/heading"
                 android:text="Andriod Tutorials"
-       android:textSize="30dp"
+		   android:textSize="30dp"
                 android:layout_marginRight="10dp"
-android:layout_marginBottom="10dp"
+	            android:layout_marginBottom="10dp"
 
             />
 <LinearLayout
@@ -30,11 +33,22 @@ android:layout_marginBottom="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/para1"
+				android:layout_marginLeft="20dp"
+				android:layout_marginRight="20dp"
                 android:text="Android is an open source and Linux-based operating system for mobile devices such as smartphones and tablet computers. Android was developed by the Open Handset Alliance, led by Google, and other companies. This tutorial will teach you basic Android programming and will also take you through some advance concepts related to Android application development."
-                android:layout_marginRight="10dp"
+               
        android:layout_marginBottom="10dp"/>
            
 </LinearLayout>   
+		<WebView
+    android:background="@android:color/white"
+    android:id="@+id/webView"
+		android:layout_marginTop="20dp"
+		android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp"
+   android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+	/>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
@@ -44,22 +58,18 @@ android:layout_marginBottom="10dp"
  <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/para2"
+               
+				android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp"
+				android:id="@+id/para2"
                 android:text="Android is an open source and Linux-based operating system for mobile devices such as smartphones and tablet computers. Android was developed by the Open Handset Alliance, led by Google, and other companies. This tutorial will teach you basic Android programming and will also take you through some advance concepts related to Android application development."
-                android:layout_marginRight="10dp"
+                
        android:layout_marginBottom="40dp"/>
            
 </LinearLayout> 
 
-	<WebView
-    android:background="@android:color/white"
-    android:id="@+id/webView"
-		android:layout_marginTop="20dp"
-		android:layout_marginLeft="20dp"
-   android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-	/>
+	
 
 
 </LinearLayout>
-	</LinearLayout>
+</ScrollView>	
