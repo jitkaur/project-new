@@ -3,8 +3,7 @@
 
   <!-- Add menu Item 1 -->
   <item android:id="@+id/menuItem1"
-        android:icon="@+drawable/ninja"
-        android:showAsAction="always"/>
+         android:title="@string/menuItem1"/>
 
   <!-- Add menu Item 2 -->
   <item android:id="@+id/menuItem2"

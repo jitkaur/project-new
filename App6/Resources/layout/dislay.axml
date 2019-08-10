@@ -9,7 +9,7 @@
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_marginTop="80dp"
-		android:text="Login"
+		android:text="News added successfully "
 		android:textSize="25dp"
 		android:textStyle="bold"
 		android:layout_gravity="center"/>

@@ -1,1 +1,0 @@
-<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:background="#4287f5" android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android"><ListView android:id="@+id/listID" android:layout_width="match_parent" android:layout_height="400dp" /></LinearLayout>
