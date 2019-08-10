@@ -32,16 +32,15 @@ namespace App6
             _fragmentsArray = new Fragment[]
             {
             new FirstFragment("List Of Courses", this),
-           // new SecondFragment( "Video Tutorials", this),
-          new FourtFragment("News",this),
-           // new SecondFragment( "Mike", this),
+            new FourtFragment("News",this),
+            new ThirdFragment( "Quiz", this),
             };
 
 
             AddTabToActionBar("Courses");  //First Tab
             //AddTabToActionBar("Tutorials"); //Second Tab
             AddTabToActionBar("News");
-           // AddTabToActionBar("Quizes"); // Third Tab
+           AddTabToActionBar("Quizes"); // Third Tab
             
 
         }

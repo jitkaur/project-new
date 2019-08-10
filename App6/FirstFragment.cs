@@ -68,7 +68,7 @@ namespace App6
 
             if(myvalue == "Android")
             {
-                Intent test = new Intent(this.Activity, typeof(Admin));
+                Intent test = new Intent(this.Activity, typeof(android_listpageact));
                 StartActivity(test);
             }
             
